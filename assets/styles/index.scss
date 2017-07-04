@@ -1,0 +1,518 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+$navy: #28395c;
+$yellow: #f1d245;
+$grey: #8f9194;
+$grey-blue: #4f5d79;
+$white: #fff;
+
+// NOTE HEADER STYLES HERE NOTE //
+// full header area with sides and center
+header {
+  background: url('https://raw.githubusercontent.com/cathyob/portfolio/master/assets/header-sides.png');
+  position: fixed; // setting fixed position so it remains at top during scrolling
+  top: 0; // will be at very top of window
+  width: 100%;
+  z-index: 3; // setting on top of body content
+}
+
+// center header image with name
+.header-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+// NOTE BUTTON STYLES HERE NOTE //
+// container div of buttons
+nav {
+  background: $white;
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed; // setting fixed position so it remains at top during scrolling
+  top: 92px; // set height below header
+  width: 100%;
+  z-index: 3; // setting on top of body content
+}
+
+// center/no margin, add padding to bottom of nav bar, set width
+.button-holder {
+  margin: 0 auto;
+  padding-bottom: 12px;
+  width: 395px;
+}
+
+// move About-me to left so truely centered
+.about-btn {
+  text-align: left;
+}
+
+// move Contact-me to right so truely centered
+.contact-btn {
+  text-align: right;
+}
+
+// add styles to button
+.btn {
+  background-color: $white !important;
+  border: 0 !important;
+  color: $navy !important;
+  font-size: 16px;
+  padding: 0;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  width: 95px;
+}
+
+// when button is hovered, active, or focus make font different
+.btn:hover, .btn:active, .btn:focus {
+  font-weight: bolder;
+  outline: none !important;
+}
+
+
+// NOTE BODY CONTENT ALL HERE NOTE//
+// NOTE BODY CONTENT ALL HERE NOTE//
+// NOTE BODY CONTENT ALL HERE NOTE//
+// NOTE content holder for all divs within NOTE//
+.content-holder {
+  background: url('../snowscenenavyfilter1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+// NOTE all divs with content except about me and portfolio NOTE //
+.landing-image-holder,
+.spacing-holder,
+.skills-holder,
+.contact-me-holder,
+.farewell-div-holder {
+  padding: 24px;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  h2 {
+    color: $white;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+}
+
+// NOTE landing image holder NOTE //
+.landing-image-holder {
+  height: 500px;
+  margin-top: 115px;
+  position: relative;
+  text-align: center;
+}
+
+.landing-text-holder {
+  height: 150px;
+  margin-left: -215px;
+  margin-top: -75px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 430px;
+}
+
+.full-stack {
+  color: $white;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 8px;
+}
+
+.download {
+  color: $white;
+  outline: 1px solid $white;
+  padding: 8px;
+  margin: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+// NOTE spacing holder NOTE //
+.spacing-holder {
+  background-color: rgba(255,255,255,0.5);
+  border-bottom: 8px solid $white;
+  border-top: 8px solid $white;
+  clear: both;
+  height: 100px;
+  padding: 0;
+  width: 100%;
+}
+
+// NOTE about me NOTE //
+.about-me-holder {
+  background: url('../snowscenenavyfilter2.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+
+  .about-me {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  h2 {
+    color: $navy;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $navy;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom:8px;
+    padding-top: 8px;
+  }
+}
+
+.my-photo {
+  border: 4px solid $white;
+  border-radius: 8px 24px;
+  height: 175px;
+  width: 175px;
+}
+
+// NOTE skill specific stuff NOTE //
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.skills-items-here {
+  clear: both;
+  margin: auto;
+  padding: 8px 0;
+  width: 564px;
+}
+
+.skills-item {
+  color: $white;
+  display: inline-block;
+  float: left;
+  outline: 1px solid $white;
+  padding: 8px;
+  margin: 8px;
+  width: 125px;
+  text-align: center;
+}
+
+.skills-item-last {
+  margin-bottom: 24px;
+}
+
+
+// NOTE portfolio NOTE //
+.portfolio-holder {
+  background-color: $navy;
+  background-size: cover;
+  height: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.portfolio {
+    margin: 0 auto;
+    width: 100%;
+
+  h2 {
+    color: $white;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+}
+
+.project-holder {
+  background-color: $white;
+  border-radius: 8px 24px;
+  display: inline-block;
+  height: 400px;
+  margin: 16px;
+  overflow-y: scroll;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  vertical-align: middle;
+  width: 300px;
+
+  h3 {
+    color: $navy;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  p {
+    color: $navy;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8px;
+  }
+}
+.project-holder:hover,
+.project-holder:focus,
+.project-holder:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.project-image {
+  border-radius: 8px 24px 0 0;
+  width: 100%;
+}
+
+// NOTE contact me holder NOTE //
+.contact-me-holder {
+  height: 350px;
+}
+
+.contact-image {
+  height: 70px;
+  margin: 8px;
+}
+
+// NOTE FOOTER STYLE NOTE //
+footer {
+  background-color: $navy;
+  // bottom: 0; // fixed position at the bottom of the scren
+  clear: both;
+  color: $white;
+  font-size: 14px;
+  height: 36px;
+  padding: 11px;
+  // position: fixed; // uses the bottom location
+  text-align: center;
+  width: 100%; // keeps it the width of the page
+  // z-index: 3;
+}
+
+@media (max-width: 775px) {
+
+  .skills-items-here {
+    width: 423px;
+  }
+
+  .skills-item {
+    font-size: 16px;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .landing-image-holder,
+  .spacing-holder,
+  .skills-holder,
+  .portfolio-holder,
+  .contact-me-holder,
+  .farewell-div-holder {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .spacing-holder {
+    height: 75px;
+  }
+
+  .about-me-holder {
+    padding: 20px;
+
+    .about-me {
+      width: 100%;
+    }
+  }
+
+  .skills-item {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  .contact-me-holder {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-image-holder,
+  .skills-holder,
+  .contact-me-holder {
+    background: url('../snowscenenavyfilter1-mobile.png');
+    background-position: fixed;
+    background-position-y: bottom;
+    background-size: cover;
+  }
+
+  .content-holder {
+    background: none;
+    background-color: $grey-blue;
+  }
+
+  .landing-text-holder {
+    margin-left: -165px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    width: 330px;
+  }
+
+  .full-stack {
+    font-size: 24px;
+  }
+
+  .about-me-holder {
+    background: url('../snowscenenavyfilter2-mobile.png');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .button-holder {
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 275px;
+  }
+
+  .btn {
+    font-size: 12px;
+    width: 65px;
+  }
+
+  .skills-items-here {
+    width: 282px;
+  }
+
+  .portfolio {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+  .project-holder:hover,
+  .project-holder:focus,
+  .project-holder:active {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .project-holder {
+    margin: 8px 0;
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 354px) {
+  // center header image with name
+  .header-center {
+    max-width: 250px;
+    padding-bottom: 6px;
+    padding-top: 11px;
+  }
+
+  nav {
+    top: 88px; // set height below header
+  }
+
+  .landing-image-holder {
+    height: 415px;
+    margin-top: 100px;
+  }
+
+  .landing-text-holder {
+    margin-left: -150px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+  }
+
+  .full-stack {
+    font-size: 20px;
+  }
+}
