@@ -11,7 +11,7 @@ $white: #fff;
 // NOTE HEADER STYLES HERE NOTE //
 // full header area with sides and center
 header {
-  background: url('https://raw.githubusercontent.com/cathyob/portfolio/master/assets/header-sides.png');
+  background: url('./images/background.png');
   position: fixed; // setting fixed position so it remains at top during scrolling
   top: 0; // will be at very top of window
   width: 100%;
@@ -79,7 +79,7 @@ nav {
 // NOTE BODY CONTENT ALL HERE NOTE//
 // NOTE content holder for all divs within NOTE//
 .content-holder {
-  background: url('../snowscenenavyfilter1.png');
+  background: url('./images/background.png')beige;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
