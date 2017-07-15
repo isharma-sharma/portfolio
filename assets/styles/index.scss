@@ -1,13 +1,11 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-//
 $navy: #28395c;
 $yellow: #f1d245;
 $grey: #8f9194;
 $grey-blue: #4f5d79;
 $white: #fff;
 $midnightBlue: #191970;
-
 // full header area with sides and center
 header {
   background: url('./images/header1.jpg');
@@ -16,24 +14,23 @@ header {
   width: 100%;
   height: 100px;
   z-index: 3; // setting on top of body content
+  // center header image with name
+  .header-center {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
 
-
-// center header image with name
-.header-center {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-}
   p {
     font-size: 30px;
     text-align: center;
     padding-top: 10px;
     font-style: oblique;
-    font-family: Alegreya ;
-
+    font-family: Alegreya;
   }
 }
 // container div of buttons
+
 nav {
   background: $white;
   border: 0;
@@ -44,7 +41,6 @@ nav {
   width: 100%;
   z-index: 3; // setting on top of body content
 }
-
 // center/no margin, add padding to bottom of nav bar, set width
 .button-holder {
   margin: 0 auto;
@@ -52,16 +48,14 @@ nav {
   width: 395px;
   height: 80px;
 }
- // move About-me to left so truely centered
+// move About-me to left so truely centered
 .about-btn {
   text-align: left;
 }
-
- // move Contact-me to right so truely centered
+// move Contact-me to right so truely centered
 .contact-btn {
   text-align: right;
 }
-
 // add styles to button
 .btn {
   background-color: $white !important;
@@ -69,12 +63,14 @@ nav {
   color: $navy !important;
   font-size: 17px;
   padding: 2px;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   width: 95px;
 }
- // when button is hovered, active, or focus make font different
-.btn:hover, .btn:active, .btn:focus {
+// when button is hovered, active, or focus make font different
+.btn:active,
+.btn:focus,
+.btn:hover {
   font-weight: bolder;
   outline: none !important;
 }
@@ -89,16 +85,16 @@ nav {
   width: 100%;
 }
 
+.contact-me-holder,
 .landing-image-holder,
-.spacing-holder,
 .skills-holder,
-.contact-me-holder
- {
+.spacing-holder {
   padding: 24px;
   z-index: 2;
   margin: 0 auto;
   text-align: center;
   width: 80%;
+
   h2 {
     color: $white;
     font-size: 22px;
@@ -125,8 +121,7 @@ nav {
     padding-top: 4px;
   }
 }
-
- // landing image holder
+// landing image holder
 .landing-image-holder {
   height: 500px;
   margin-top: 115px;
@@ -164,6 +159,7 @@ nav {
 }
 //
 // // NOTE spacing holder NOTE //
+
 .spacing-holder {
   background-color: rgba(255,255,255,0.5);
   border-bottom: 8px solid $white;
@@ -174,7 +170,8 @@ nav {
   width: 100%;
 }
 //
-// // NOTE about me NOTE //
+// about me
+
 .about-me-holder {
   background: url('./images/images-3.jpg');
   background-attachment: fixed;
@@ -192,7 +189,7 @@ nav {
     margin: 0 auto;
     width: 80%;
   }
-//
+
   h2 {
     color: $navy;
     font-size: 22px;
@@ -201,19 +198,19 @@ nav {
     padding-top: 6px;
     text-transform: uppercase;
   }
-//
+
   p {
     color: $navy;
     font-size: 20px;
     font-weight: bold;
     line-height: 20px;
     margin: 0;
-    padding-bottom:8px;
+    padding-bottom: 8px;
     padding-top: 8px;
     font-style: oblique;
   }
 }
-//
+
 .my-photo {
   border: 4px solid $white;
   border-radius: 8px 24px;
@@ -228,12 +225,14 @@ nav {
   line-height: 0;
   height: 0;
 }
+
 .skills-items-here {
   clear: both;
   margin: auto;
   padding: 8px 0;
   width: 564px;
 }
+
 .skills-item {
   color: black;
   display: inline-block;
@@ -244,13 +243,14 @@ nav {
   width: 125px;
   text-align: center;
   font-weight: 500;
-
 }
 //
+
 .skills-item-last {
   margin-bottom: 24px;
 }
 //  portfolio
+
 .portfolio-holder {
   background-color: $navy;
   background-size: cover;
@@ -262,9 +262,10 @@ nav {
   z-index: 2;
 }
 //
+
 .portfolio {
-    margin: 0 auto;
-    width: 100%;
+  margin: 0 auto;
+  width: 100%;
 
   h2 {
     color: $white;
@@ -292,23 +293,24 @@ nav {
     padding-top: 4px;
   }
 }
-//
+
+
 .project-holder {
-background-color: $white;
-border-radius: 8px 24px;
-display: inline-block;
-height: 400px;
-margin: 16px;
-overflow-y: scroll;
--webkit-transform: perspective(1px) translateZ(0);
-transform: perspective(1px) translateZ(0);
-box-shadow: 0 0 1px transparent;
--webkit-transition-duration: 0.3s;
-transition-duration: 0.3s;
--webkit-transition-property: transform;
-transition-property: transform;
-vertical-align: middle;
-width: 300px;
+  background-color: $white;
+  border-radius: 8px 24px;
+  display: inline-block;
+  height: 400px;
+  margin: 16px;
+  overflow-y: scroll;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  vertical-align: middle;
+  width: 300px;
 
   h3 {
     color: $navy;
@@ -323,15 +325,13 @@ width: 300px;
     font-size: 14px;
     line-height: 18px;
     margin: 0;
-    padding-bottom: 4px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 8px;
+    padding: 8px 5% 4px;
   }
 }
-.project-holder:hover,
+
+.project-holder:active,
 .project-holder:focus,
-.project-holder:active {
+.project-holder:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -349,7 +349,6 @@ width: 300px;
   height: 70px;
   margin: 8px;
 }
-
 // FOOTER STYLE
 footer {
   background-color: $navy;
@@ -362,151 +361,150 @@ footer {
   position: fixed; // uses the bottom location
   text-align: center;
   width: 100%; // keeps it the width of the page
-   z-index: 3;
+  z-index: 3;
+}
+@media (max-width: 775px) {
+
+  .skills-items-here {
+    width: 423px;
+  }
+
+  .skills-item {
+    font-size: 16px;
+    padding: 4px 0;
+  }
 }
 
-// @media (max-width: 775px) {
-//
-//   .skills-items-here {
-//     width: 423px;
-//   }
-//
-//   .skills-item {
-//     font-size: 16px;
-//     padding: 4px 0;
-//   }
-// }
-//
-// @media (max-width: 550px) {
-//
-//   .landing-image-holder,
-//   .spacing-holder,
-//   .skills-holder,
-//   .portfolio-holder,
-//   .contact-me-holder,
-//   .farewell-div-holder {
-//     padding: 20px;
-//     width: 100%;
-//   }
-//
-//   .spacing-holder {
-//     height: 75px;
-//   }
-//
-//   .about-me-holder {
-//     padding: 20px;
-//
-//     .about-me {
-//       width: 100%;
-//     }
-//   }
-//
-//   .skills-item {
-//     font-size: 14px;
-//     padding: 4px 0;
-//   }
-//
-//   .contact-me-holder {
-//     height: 250px;
-//   }
-// }
-//
-// @media (max-width: 480px) {
-//   .landing-image-holder,
-//   .skills-holder,
-//   .contact-me-holder {
-//     // background: url();
-//     background-position: fixed;
-//     background-position-y: bottom;
-//     background-size: cover;
-//   }
-//
-//   .content-holder {
-//     background: none;
-//     background-color: $grey-blue;
-//   }
-//
-//   .landing-text-holder {
-//     margin-left: -165px;
-//     margin-top: -75px;
-//     top: 50%;
-//     left: 50%;
-//     width: 330px;
-//   }
-//
-//   .full-stack {
-//     font-size: 24px;
-//   }
-//
-//   .about-me-holder {
-//     // background: url('');
-//     background-attachment: scroll;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     height: 100%;
-//     width: 100%;
-//   }
-//
-//   .button-holder {
-//     margin: 0 auto;
-//     padding-bottom: 8px;
-//     width: 275px;
-//   }
-//
-//   .btn {
-//     font-size: 12px;
-//     width: 65px;
-//   }
-//
-//   .skills-items-here {
-//     width: 282px;
-//   }
-//
-//   .portfolio {
-//       margin: 0 auto;
-//       width: 100%;
-//     }
-//
-//   .project-holder:hover,
-//   .project-holder:focus,
-//   .project-holder:active {
-//     -webkit-transform: none;
-//     transform: none;
-//   }
-//
-//   .project-holder {
-//     margin: 8px 0;
-//     width: 95%;
-//   }
-//
-// }
-//
-// @media (max-width: 354px) {
-  // center header image with name
-//   .header-center {
-//     max-width: 250px;
-//     padding-bottom: 6px;
-//     padding-top: 11px;
-//   }
-//
-//   nav {
-//     top: 88px; // set height below header
-//   }
-//
-//   .landing-image-holder {
-//     height: 415px;
-//     margin-top: 100px;
-//   }
-//
-//   .landing-text-holder {
-//     margin-left: -150px;
-//     margin-top: -75px;
-//     top: 50%;
-//     left: 50%;
-//     width: 300px;
-//   }
-//
-//   .full-stack {
-//     font-size: 20px;
-//   }
-// }
+@media (max-width: 550px) {
+
+  .landing-image-holder,
+  .spacing-holder,
+  .skills-holder,
+  .portfolio-holder,
+  .contact-me-holder,
+  .farewell-div-holder {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .spacing-holder {
+    height: 75px;
+  }
+
+  .about-me-holder {
+    padding: 20px;
+
+    .about-me {
+      width: 100%;
+    }
+  }
+
+  .skills-item {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  .contact-me-holder {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-image-holder,
+  .skills-holder,
+  .contact-me-holder {
+    // background: url();
+    background-position: fixed;
+    background-position-y: bottom;
+    background-size: cover;
+  }
+
+  .content-holder {
+    background: none;
+    background-color: $grey-blue;
+  }
+
+  .landing-text-holder {
+    margin-left: -165px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    width: 330px;
+  }
+
+  .full-stack {
+    font-size: 24px;
+  }
+
+  .about-me-holder {
+    // background: url('');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .button-holder {
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 275px;
+  }
+
+  .btn {
+    font-size: 12px;
+    width: 65px;
+  }
+
+  .skills-items-here {
+    width: 282px;
+  }
+
+  .portfolio {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+  .project-holder:hover,
+  .project-holder:focus,
+  .project-holder:active {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .project-holder {
+    margin: 8px 0;
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 354px) {
+center header image with name
+  .header-center {
+    max-width: 250px;
+    padding-bottom: 6px;
+    padding-top: 11px;
+  }
+
+  nav {
+    top: 88px; // set height below header
+  }
+
+  .landing-image-holder {
+    height: 415px;
+    margin-top: 100px;
+  }
+
+  .landing-text-holder {
+    margin-left: -150px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+  }
+
+  .full-stack {
+    font-size: 20px;
+  }
+}
