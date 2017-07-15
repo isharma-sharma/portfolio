@@ -6,21 +6,32 @@ $yellow: #f1d245;
 $grey: #8f9194;
 $grey-blue: #4f5d79;
 $white: #fff;
+$midnightBlue: #191970;
 
 // full header area with sides and center
 header {
-  background: url('./images/header.png');
+  background: url('./images/header1.jpg');
   position: fixed; // setting fixed position so it remains at top during scrolling
   top: 0; // will be at very top of window
-  width: 30%;
+  width: 100%;
+  height: 100px;
   z-index: 3; // setting on top of body content
-}
+
 
 // center header image with name
 .header-center {
   display: block;
   margin: 0 auto;
   max-width: 300px;
+}
+  p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-style: oblique;
+    font-family: Alegreya ;
+
+  }
 }
 // container div of buttons
 nav {
@@ -39,6 +50,7 @@ nav {
   margin: 0 auto;
   padding-bottom: 12px;
   width: 395px;
+  height: 80px;
 }
  // move About-me to left so truely centered
 .about-btn {
@@ -55,8 +67,8 @@ nav {
   background-color: $white !important;
   border: 0 !important;
   color: $navy !important;
-  font-size: 16px;
-  padding: 0;
+  font-size: 17px;
+  padding: 2px;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
   width: 95px;
@@ -114,7 +126,7 @@ nav {
   }
 }
 
- // NOTE landing image holder NOTE //
+ // landing image holder
 .landing-image-holder {
   height: 500px;
   margin-top: 115px;
@@ -164,7 +176,7 @@ nav {
 //
 // // NOTE about me NOTE //
 .about-me-holder {
-  // background: url('');
+  background: url('./images/images-3.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,7 +186,7 @@ nav {
   padding: 24px;
   text-align: center;
   width: 100%;
-  z-index: 2;
+  z-index: -2;
 
   .about-me {
     margin: 0 auto;
@@ -192,12 +204,13 @@ nav {
 //
   p {
     color: $navy;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 20px;
     margin: 0;
     padding-bottom:8px;
     padding-top: 8px;
+    font-style: oblique;
   }
 }
 //
@@ -222,7 +235,7 @@ nav {
   width: 564px;
 }
 .skills-item {
-  color: $white;
+  color: black;
   display: inline-block;
   float: left;
   outline: 1px solid $white;
@@ -230,6 +243,8 @@ nav {
   margin: 8px;
   width: 125px;
   text-align: center;
+  font-weight: 500;
+
 }
 //
 .skills-item-last {
@@ -334,20 +349,20 @@ width: 300px;
   height: 70px;
   margin: 8px;
 }
-//
-// // NOTE FOOTER STYLE NOTE //
+
+// FOOTER STYLE
 footer {
   background-color: $navy;
-  // bottom: 0; // fixed position at the bottom of the scren
+  bottom: 0; // fixed position at the bottom of the scren
   clear: both;
   color: $white;
   font-size: 14px;
   height: 36px;
   padding: 11px;
-  // position: fixed; // uses the bottom location
+  position: fixed; // uses the bottom location
   text-align: center;
   width: 100%; // keeps it the width of the page
-  // z-index: 3;
+   z-index: 3;
 }
 
 // @media (max-width: 775px) {
