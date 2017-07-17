@@ -419,11 +419,10 @@ footer {
     background-size: cover;
   }
 
-  .content-holder {
-    background: none;
-    background-color: $grey-blue;
-  }
-
+.content-holder {
+  background: none;
+  background-color: $grey-blue;
+}
   .landing-text-holder {
     margin-left: -165px;
     margin-top: -75px;
@@ -480,7 +479,7 @@ footer {
 }
 
 @media (max-width: 354px) {
-center header image with name
+// center header image with name
   .header-center {
     max-width: 250px;
     padding-bottom: 6px;
