@@ -94,6 +94,7 @@ nav {
   height: 100%;
   width: 100%;
 }
+
 .contact-me-holder,
 .landing-image-holder,
 .skills-holder,
@@ -132,9 +133,13 @@ nav {
 }
 // landing image holder
 .landing-image-holder {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 500px;
   margin-top: 115px;
-  position: relative;
+  // position: relative;
   text-align: center;
 }
 
@@ -144,11 +149,12 @@ nav {
   margin-top: -75px;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 430px;
-  font-size: 20px;
+  font-size: 25px;
   color: $midnightBlue;
+
 }
 
 .full-stack {
